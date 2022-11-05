@@ -1,0 +1,109 @@
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div .container {
+    top: 80px;
+}
+
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+}
+
+.sect1,.sect2,.sect3 {
+    float: left;
+    padding: 10px;
+}
+
+.content {
+    background-color: #ADADAD;
+    padding: 0 20px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+#chicken {
+    background-color: #EABBC1;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#beef {
+    background-color: #D63C3C;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#sushi {
+    background-color: #FAE8A7;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) {
+    .sect1,.sect2,.sect3 {
+        display: inline-block;
+        width: 33%;
+    }
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width:768px) and (max-width: 991px) {
+    .sect1,.sect2,.sect3 {
+        display: inline-block;
+    }
+    .sect1, .sect2 {
+        width: 50%;
+    }
+    .sect3 {
+        width: 100%;
+    }
+}
+
+/********** Mobil devices only **********/
+
+@media (max-width: 767px) {
+    .sect1,.sect2,.sect3 {
+        display: inline-block;
+        width: 100%;
+    }
+}
